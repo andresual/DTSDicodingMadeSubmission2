@@ -62,7 +62,7 @@ public class MovieFragment extends Fragment {
         }
 
         rvMovie.setLayoutManager(new LinearLayoutManager(getActivity()));
-        MovieAdapter movieAdapter = new MovieAdapter(movieModelArrayList);
+        MovieAdapter movieAdapter = new MovieAdapter(getActivity(), movieModelArrayList);
         rvMovie.setAdapter(movieAdapter);
     }
 

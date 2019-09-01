@@ -62,7 +62,7 @@ public class TvShowFragment extends Fragment {
         }
 
         rvTv.setLayoutManager(new LinearLayoutManager(getActivity()));
-        TvAdapter tvAdapter = new TvAdapter(tvModelArrayList);
+        TvAdapter tvAdapter = new TvAdapter(getActivity(), tvModelArrayList);
         rvTv.setAdapter(tvAdapter);
     }
 

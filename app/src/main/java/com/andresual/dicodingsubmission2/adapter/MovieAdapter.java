@@ -1,5 +1,7 @@
 package com.andresual.dicodingsubmission2.adapter;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -7,9 +9,11 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.andresual.dicodingsubmission2.R;
+import com.andresual.dicodingsubmission2.activity.DetailActivity;
 import com.andresual.dicodingsubmission2.model.MovieModel;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.request.RequestOptions;
@@ -19,9 +23,11 @@ import java.util.ArrayList;
 public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ListViewHolder> {
 
     private ArrayList<MovieModel> movieModelArrayList;
+    Context context;
 
-    public MovieAdapter(ArrayList<MovieModel> movieAdapterArrayList) {
+    public MovieAdapter(Context context, ArrayList<MovieModel> movieAdapterArrayList) {
         this.movieModelArrayList = movieAdapterArrayList;
+        this.context = context;
     }
 
     public class ListViewHolder extends RecyclerView.ViewHolder {
@@ -30,6 +36,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ListViewHold
         TextView tvDesc;
         TextView tvYear;
         ImageView ivMovie;
+        CardView cvMovie;
 
         public ListViewHolder(@NonNull View view) {
             super(view);
@@ -37,6 +44,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ListViewHold
             tvYear = view.findViewById(R.id.tv_year);
             tvDesc = view.findViewById(R.id.tv_excerpt);
             ivMovie = view.findViewById(R.id.iv_hero);
+            cvMovie = view.findViewById(R.id.cv_item);
         }
     }
 
@@ -48,7 +56,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ListViewHold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MovieAdapter.ListViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull final MovieAdapter.ListViewHolder holder, final int position) {
         MovieModel movieModel = movieModelArrayList.get(position);
 
         holder.tvTitle.setText(movieModel.getTitle());
@@ -59,6 +67,20 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ListViewHold
                 .load(movieModel.getImg())
                 .apply(new RequestOptions())
                 .into(holder.ivMovie);
+
+        holder.cvMovie.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                MovieModel movieModel = new MovieModel();
+                movieModel.setTitle(movieModelArrayList.get(position).getTitle());
+                movieModel.setDesc(movieModelArrayList.get(position).getDesc());
+                movieModel.setYear(movieModelArrayList.get(position).getYear());
+                movieModel.setImg(movieModelArrayList.get(position).getImg());
+                Intent moveWithObjectIntent = new Intent(context, DetailActivity.class);
+                moveWithObjectIntent.putExtra(DetailActivity.EXTRA_MOVIE, movieModel);
+                context.startActivity(moveWithObjectIntent);
+            }
+        });
     }
 
     @Override
