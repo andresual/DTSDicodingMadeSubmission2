@@ -57,7 +57,7 @@ public class MovieAdapter extends RecyclerView.Adapter<MovieAdapter.ListViewHold
 
         Glide.with(holder.itemView.getContext())
                 .load(movieModel.getImg())
-                .apply(new RequestOptions().override(55, 55))
+                .apply(new RequestOptions())
                 .into(holder.ivMovie);
     }
 

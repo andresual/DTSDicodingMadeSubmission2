@@ -1,7 +1,39 @@
-<resources>
-    <string name="app_name">Dicoding Submission 2</string>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <array name="data_photo">
+        <item>@drawable/poster_dragon</item>
+        <item>@drawable/poster_bumblebee</item>
+        <item>@drawable/poster_a_star</item>
+        <item>@drawable/poster_aquaman</item>
+        <item>@drawable/poster_avengerinfinity</item>
+        <item>@drawable/poster_birdbox</item>
+        <item>@drawable/poster_bohemian</item>
+        <item>@drawable/poster_creed</item>
+        <item>@drawable/poster_deadpool</item>
+        <item>@drawable/poster_dragonball</item>
+    </array>
 
     <!--    dataset-->
+    <array name="data_tv_photo">
+        <item>@drawable/deep_in_the_realm_of_conscience</item>
+        <item>@drawable/ishq_tamasha</item>
+        <item>@drawable/belapur_ki_dayan</item>
+        <item>@drawable/band_khirkiyan</item>
+        <item>@drawable/cities_natures_new_wild</item>
+        <item>@drawable/buy_it_now</item>
+        <item>@drawable/o_ses_turkiye</item>
+        <item>@drawable/the_new_adventures_of_gigantor</item>
+        <item>@drawable/the_looming_tower</item>
+        <item>@drawable/arctic_circle</item>
+    </array>
+
+    <string name="app_name">Dicoding Submission 2</string>
+
+    <string name="change_language_settings">Change Language Settings</string>
+
+    <string name="movie">Movie</string>
+
+    <string name="tv_show">TV Show</string>
+
     <string-array name="data_title">
         <item>How to Train Your Dragon: The Hidden World</item>
         <item>Bumblebee</item>
@@ -28,19 +60,6 @@
         <item>Earth is peaceful following the Tournament of Power. Realizing that the universes still hold many more strong people yet to see, Goku spends all his days training to reach even greater heights. Then one day, Goku and Vegeta are faced by a Saiyan called \Broly\ who they\ve never seen before. The Saiyans were supposed to have been almost completely wiped out in the destruction of Planet Vegeta, so what\s this one doing on Earth? This encounter between the three Saiyans who have followed completely different destinies turns into a stupendous battle, with even Frieza (back from Hell) getting caught up in the mix.</item>
     </string-array>
 
-    <array name="data_photo">
-        <item>@drawable/poster_dragon</item>
-        <item>@drawable/poster_bumblebee</item>
-        <item>@drawable/poster_a_star</item>
-        <item>@drawable/poster_aquaman</item>
-        <item>@drawable/poster_avengerinfinity</item>
-        <item>@drawable/poster_birdbox</item>
-        <item>@drawable/poster_bohemian</item>
-        <item>@drawable/poster_creed</item>
-        <item>@drawable/poster_deadpool</item>
-        <item>@drawable/poster_dragonball</item>
-    </array>
-
     <string-array name="data_year">
         <item>2018</item>
         <item>2018</item>
@@ -53,4 +72,42 @@
         <item>2018</item>
         <item>2018</item>
     </string-array>
+
+    <string-array name="data_tv_title">
+        <item>Deep in the Realm of Conscience</item>
+        <item>Ishq Tamasha</item>
+        <item>Belapur Ki Dayan</item>
+        <item>Band Khirkiyan</item>
+        <item>Cities: Nature\'s New Wild</item>
+        <item>Buy It Now</item>
+        <item>O Ses Türkiye</item>
+        <item>The New Adventures of Gigantor</item>
+        <item>The Looming Tower</item>
+        <item>Arctic Circle</item>
+    </string-array>
+    <string-array name="data_tv_desc">
+        <item>During the reign of Emperor Shang of Tang, Prince of Ping, and Princess Taiping stage a coup and execute the Empress Dowager Wei who was seize power on the court system. They support Prince of Xiang in reclaiming the throne. The palace appears to be returning to peace, but, the great waves are secretly approaching - On the court, the aunt-nephew camp of Princess Taiping and Prince of Ping begin to be divided and become like fire and water. Within the inner palace, Prince of Ping\'s first wife, Wong Zhen and favorite concubine Zheng Chunxi compete with their beauty and cannot get along. Fortunately, within the deceitful inner palace, there is rare integrity. The heroic and righteous imperial guards, Yam Sam-Shu and Ho Lei, and the quiet and elegant department heads, Kam Yeuk-chin, and Yuen Yuet, are four genuine people that decorate the gloomy and cold palace halls with a brush of romance and add a little mystery - Some people will give up everything for their most beloved, while others will give up their soul for power. A series of unsolved cases occur in the palace. Within the layers and layers of mystery is a long-kept secret. As it is slowly unraveled, it reveals humanity\'s deep thirst for power and wealth.</item>
+        <item>A story of five individuals and how love creates drama in their life. How their decisions have significant impact on each others lives.</item>
+        <item>The story revolves around Aziz, who has recently moved to his ancestral home after winning a 32-year-long court battle with his step brother. In the house, his whole family is disturbed with the supernatural presence.</item>
+        <item>Subuhi, a simple and sensitive girl, is married to Zain, an extremely possessive man. Their love vanishes with jealousy, doubts and suffocation, which overpowers their relationship.</item>
+        <item>Discover the remarkable ways animals of all shapes and sizes are adapting to make the most of opportunities in the newest and fastest changing habitat on the planet - our cities.</item>
+        <item>Inventors, creators and sellers of new products have just 90 seconds to demonstrate their item before an audience of buyers in the hope of securing an order for their product. Hosted by Brian Conley.</item>
+        <item>O Ses Türkiye is a Turkish reality singing competition and local version of The Voice first broadcast as The Voice of Holland. It started on October 10, 2011. Its first season was held in February 19, 2012 on Show TV. The second season starts on Autumn 2012 on Star TV. One of the important premises of the show is the quality of the singing talent. Four coaches, themselves popular performing artists, train the talents in their group and occasionally perform with them. Talents are selected in blind auditions, where the coaches cannot see, but only hear the auditioner.</item>
+        <item>New Tetsujin-28, also known as The New Adventures of Gigantor in the US, is the color modern style remake of Tetsujin 28-go. It was later adapted in 1993. Fred Ladd and the TMS animation studio converted the series into The New Adventures of Gigantor and had it broadcast on America\'s Sci-Fi Channel from September 9, 1993 to June 30, 1997. In January 2012 New Tetsujin-28 was announced to appear in Super Robot Wars Z2: Regeneration Chapter.</item>
+        <item>While Osama bin Laden and Al-Qaeda become a global threat, the rivalry between the CIA and FBI inadvertently sets the stage for the tragedy of 9/11 and the Iraq War.</item>
+        <item>During a routine search of an old cabin in the remote and wintery back country, Finnish policewoman, Nina Kautsalo, discovers two dead prostitutes, with a third still fighting for her life. The ensuing investigation takes a surprise twist when an extremely rare and deadly virus is discovered in the surviving woman’s bloodwork. When the Finnish Bureau of Investigation takes over the case, German virologist, Thomas Lorenz is called in to assist in identifying and containing the virus. Set within the endless white expanse of the arctic circle, Nina and Thomas must rely on each other to have any hope of saving the ones they love. But what takes precedence? A deadly virus or an active serial killer?</item>
+    </string-array>
+    <string-array name="data_tv_year">
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+        <item>2018</item>
+    </string-array>
+
 </resources>
